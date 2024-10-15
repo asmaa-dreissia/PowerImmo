@@ -1,0 +1,222 @@
+/*
+Couleurs principales :
+Orange vif : #FF8C42
+Orange clair : #FFA65C
+Orange foncé : #E76F51
+Beige (pour des éléments neutres) : #F4A261
+Blanc cassé (pour les arrière-plans ou éléments aérés) : #FFE8D6
+
+Couleurs secondaires :
+Gris clair (pour le texte secondaire, fonds, etc.) : #F5F5F5
+Gris foncé (pour le texte principal) : #333333
+Noir doux (pour les titres) : #2A2A2A
+
+background: linear-gradient(to bottom, #f9b781, #4b2f1e, #3f1005);
+
+    background: linear-gradient(to bottom, #f9b781, #080502, #3f1005);
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #f4f4f4;
+    color: rgb(0, 0, 0);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    
+}
+
+nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo3{
+    width: 50%;
+    
+}
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero-image {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-size: 24px;
+}
+
+.search-section {
+    background-color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.search-section h2 {
+    margin-bottom: 20px;
+}
+
+.search-section form {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.search-section input, 
+.search-section select, 
+.search-section button {
+    padding: 10px;
+    font-size: 16px;
+}
+
+.property-list {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.property-list h2 {
+    margin-bottom: 20px;
+}
+
+.property-card {
+    display: inline-block;
+    width: 300px;
+    background-color: white;
+    margin: 15px;
+    padding: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.property-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.property-card h3 {
+    font-size: 20px;
+    margin: 15px 0 10px;
+}
+
+.property-card p {
+    margin-bottom: 10px;
+}
+
+.agents-section {
+    padding: 40px 20px;
+    background-color: white;
+    text-align: center;
+}
+
+.agents-section h2 {
+    margin-bottom: 20px;
+}
+
+.agent-card {
+    display: inline-block;
+    width: 250px;
+    background-color: #f4f4f4;
+    margin: 15px;
+    padding: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.agent-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.agent-card h3 {
+    margin: 15px 0 10px;
+}
+
+#contact {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+#contact form {
+    display: inline-block;
+    max-width: 600px;
+    width: 100%;
+    text-align: left;
+}
+
+#contact label {
+    margin: 10px 0 5px;
+}
+
+#contact input, 
+#contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contact button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
